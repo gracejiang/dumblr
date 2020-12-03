@@ -7,15 +7,9 @@
 .post {
     margin: auto;
     max-width: 720px;
-    padding: 30px 60px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
     transition: 0.3s;
-    border-radius: 5px;
 }
 
-.post:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15);
-}
 
 .post h2, .post h2 a, .post h2 a:visited {
     color: #329ba1;
@@ -34,7 +28,7 @@
     margin-bottom: 24px;
 }
 
-.post .post-details {
-    text-align: right;
+.post .back-button {
     font-size: 20px;
+    margin-bottom: 40px;
 }

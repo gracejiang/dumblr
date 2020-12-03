@@ -1,9 +1,19 @@
 {% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/post-detail.css' %}">
+{% endblock %}
 
 {% block content %}
-    <div class="post">
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p class="publish-details"><i>Published By <b>{{ post.author }}</b> on <b>{{ post.published_date }}</b></i></p>
-        <p>{{ post.text | linebreaksbr }}</p>
+    <div class="post-container">
+        <div class="post">
+            <p class="back-button"><a href="/blog">⟵ Back to all posts</a></p>
+            <h2>{{ post.title }}</h2>
+            <p class="publish-details">Author: <b>{{ post.author }}</b> | 
+            Created On: <b>{{ post.created_date }}</b> | 
+            Published On: <b>{{ post.published_date }}</b></p>
+            <p>{{ post.text | linebreaksbr }}</p>
+        </div>
     </div>
 {% endblock %}

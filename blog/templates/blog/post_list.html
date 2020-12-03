@@ -8,10 +8,12 @@
 {% block content %}
 
     {% for post in posts %}
-        <div class="post">
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p class="publish-details"><i>Published By <b>{{ post.author }}</b> on <b>{{ post.published_date }}</b></i></p>
-            <p>{{ post.text | linebreaksbr }}</p>
+        <div class="post-container">
+            <div class="post">
+                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                <p class="publish-details"><i>Published By <b>{{ post.author }}</b> on <b>{{ post.published_date }}</b></i></p>
+                <p class="post-details"><a href="{% url 'post_detail' pk=post.pk %}">View post content ⟶</a></p>
+            </div>
         </div>
     {% endfor %}
 
