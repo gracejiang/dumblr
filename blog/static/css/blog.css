@@ -8,7 +8,7 @@ body {
 
 .page-header {
     margin-top: 0;
-    padding: 20px 40px 20px 40px;
+    padding: 30px 50px 30px 50px;
     background-color: #329ba1;
 }
 
@@ -35,7 +35,7 @@ body {
 .post h2 a, .post h2 a:visited {
     color: #329ba1;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .post p, .post h2 {
@@ -43,7 +43,9 @@ body {
     margin: 10px;
 }
 
-.post .publish-date {
+.post .publish-details {
+    font-size: 14px;
+    margin-top: 12px;
     margin-bottom: 24px;
 }
 
@@ -51,6 +53,7 @@ footer {
     margin-top: 40px;
     text-align: center;
     color: black;
+    padding: 20px;
 }
 
 footer a {

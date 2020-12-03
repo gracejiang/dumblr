@@ -1,41 +1,13 @@
-{% load static %}
+{% extends 'blog/base.html' %}
 
-<html>
-    <head>
-        <title>DUMBLR</title>
+{% block content %}
 
-        <!-- STYLING -->
-        <!-- custom css -->
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-
-        <div class="page-header">
-            <h1><a href="/">dumblr</a></h1>
+    {% for post in posts %}
+        <div class="post">
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p class="publish-details"><i>Published By <b>{{ post.author }}</b> on <b>{{ post.published_date }}</b></i></p>
+            <p>{{ post.text | linebreaksbr }}</p>
         </div>
+    {% endfor %}
 
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-
-                {% for post in posts %}
-                    <div class="post">
-                        <h2><a href="">{{ post.title }}</a></h2>
-                        <p class="publish-date"><i>Published On: {{ post.published_date }}</i></p>
-                        <p>{{ post.text | linebreaksbr }}</p>
-                    </div>
-                {% endfor %}
-
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            built by grac | <a href="https://github.com/gracejiang/dumblr">view code here</a>
-        </footer>
-    
-    </body>
-</html>
+{% endblock %}
