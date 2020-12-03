@@ -15,7 +15,6 @@
 
         <div class="page-header">
             <h1><a href="/">dumblr</a></h1>
-            <p>tumblr but ugly :-)</p>
         </div>
 
         <div class="content container">
@@ -25,7 +24,7 @@
                 {% for post in posts %}
                     <div class="post">
                         <h2><a href="">{{ post.title }}</a></h2>
-                        <p><i>Published On: {{ post.published_date }}</i></p>
+                        <p class="publish-date"><i>Published On: {{ post.published_date }}</i></p>
                         <p>{{ post.text | linebreaksbr }}</p>
                     </div>
                 {% endfor %}

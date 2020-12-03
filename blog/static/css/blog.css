@@ -1,22 +1,27 @@
+* {
+    margin: 0px;
+}
+
 body {
     font-family: 'Roboto';
 }
 
 .page-header {
     margin-top: 0;
-    padding: 10px 20px 10px 40px;
+    padding: 20px 40px 20px 40px;
+    background-color: #329ba1;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #329ba1;
-    font-size: 72pt;
+    color: white;
+    font-size: 60pt;
     text-decoration: none;
     margin: 0px;
 }
 
 .post {
-    margin: 20px 20px 40px 20px;
-    padding: 8px 20px 10px 20px;
+    margin: 30px 30px 40px 30px;
+    padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
     transition: 0.3s;
     border-radius: 5px;
@@ -26,10 +31,20 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15);
 }
 
+
 .post h2 a, .post h2 a:visited {
     color: #329ba1;
     text-decoration: none;
     font-size: 30px;
+}
+
+.post p, .post h2 {
+    line-height: 140%;
+    margin: 10px;
+}
+
+.post .publish-date {
+    margin-bottom: 24px;
 }
 
 footer {
