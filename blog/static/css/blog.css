@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto';
+}
+
+.page-header {
+    margin-top: 0;
+    padding: 10px 20px 10px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #329ba1;
+    font-size: 72pt;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.post {
+    margin: 20px 20px 40px 20px;
+    padding: 8px 20px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15);
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #329ba1;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: #329ba1;
+}
