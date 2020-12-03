@@ -6,7 +6,11 @@
 
         <!-- STYLING -->
         <!-- custom css -->
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        {% block styles %}
+        {% endblock %}
+
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -15,6 +19,7 @@
 
         <div class="page-header">
             <h1><a href="/">dumblr</a></h1>
+            <h1><a href="/blog">blog posts</a></h1>
         </div>
 
         <div class="content container">
@@ -27,10 +32,10 @@
                 </div>
             </div>
         </div>
-
+<!-- 
         <footer>
             built by grac | <a href="https://github.com/gracejiang/dumblr">view code here</a>
-        </footer>
+        </footer> -->
     
     </body>
 </html>
