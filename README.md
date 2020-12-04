@@ -16,16 +16,21 @@ navigate to repo
 cd dumblr
 ```
 
-run server
+make sure all packaged are installed
+```
+pip install -r requirements.txt
+```
+
+run the server
 ```
 python3 manage.py runserver
 ```
 
 ### todo
 
-- [] switch post url routing from primary key to post id
-- [] show 5 fields of post model
-- [] change post rendering from html to md
+- [x] switch post url routing from primary key to post id
+- [x] show 5 fields of post model
+- [x] change post rendering from html to md
 
 
 ### notes to self [ignore]
