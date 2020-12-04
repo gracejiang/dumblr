@@ -23,3 +23,8 @@ def post_detail(request, id):
 def markdown_to_html(md):
     markdowner = Markdown()
     return markdowner.convert(md)
+
+def text_preview(text):
+    if len(text) > 100:
+        return text[:100] + "..."
+    return text
