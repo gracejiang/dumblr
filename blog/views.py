@@ -14,6 +14,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 # post details
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+def post_detail(request, id):
+    post = get_object_or_404(Post, id=id)
     return render(request, 'blog/post_detail.html', {'post': post})

@@ -10,9 +10,9 @@
     {% for post in posts %}
         <div class="post-container">
             <div class="post">
-                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                <h2><a href="{% url 'post_detail' id=post.id %}">{{ post.title }}</a></h2>
                 <p class="publish-details"><i>Published By <b>{{ post.author }}</b> on <b>{{ post.published_date }}</b></i></p>
-                <p class="post-details"><a href="{% url 'post_detail' pk=post.pk %}">View post content ⟶</a></p>
+                <p class="post-details"><a href="{% url 'post_detail' id=post.id %}">View post content ⟶</a></p>
             </div>
         </div>
     {% endfor %}
