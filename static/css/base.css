@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.page-header {
+    margin-top: 0;
+    padding: 0px 40px;
+    background-color: #329ba1;
+    overflow: hidden;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: white;
+    font-size: 40pt;
+    text-decoration: none;
+    margin: 0px;
+    float: left;
+    padding: 14px 16px;
+}
+
+a {
+    color: #329ba1;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #329ba1;
+}

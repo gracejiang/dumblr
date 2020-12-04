@@ -7,16 +7,23 @@
 .post {
     margin: auto;
     max-width: 720px;
+    padding: 30px 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
     transition: 0.3s;
+    border-radius: 5px;
 }
 
-.post h1, .post h1 a, .post h1 a:visited {
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15);
+}
+
+.post h2, .post h2 a, .post h2 a:visited {
     color: #329ba1;
     text-decoration: none;
     font-size: 36px;
 }
 
-.post p, .post h1, .post h2, .post h3 {
+.post p, .post h2 {
     line-height: 140%;
     margin: 10px;
 }
@@ -27,7 +34,7 @@
     margin-bottom: 24px;
 }
 
-.post .back-button {
+.post .post-details {
+    text-align: right;
     font-size: 20px;
-    margin-bottom: 40px;
 }

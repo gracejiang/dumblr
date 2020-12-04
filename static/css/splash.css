@@ -1,0 +1,30 @@
+.splash-container {
+    align-items: center;
+    margin: 40px 100px;
+}
+
+.splash-content {
+    margin: auto;
+    max-width: 720px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.image {
+    margin: 20px;
+    text-align: center;
+}
+
+img {
+    margin: 10px;
+    width: 200px;
+}
+
+h1 {
+    color: #329ba1;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
