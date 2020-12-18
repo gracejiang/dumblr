@@ -1,18 +1,7 @@
 # dumblr
-dummy tumblr | built for cis192
+dummy tumblr
 
 ### examples of working result
-
-*landing and blog pages*
-
-![example-1](assets/example-1.gif)
-
-
-
-*markdown conversion*
-
-![example-2](assets/example-2.gif)
-
 
 
 ### how to run locally
@@ -42,21 +31,3 @@ run the server
 ```
 python3 manage.py runserver
 ```
-
-
-
-
-
-### ignore this
-
-**requirements**:
-
-- [x] url routing to each post based off post id
-- [x] shows 5 fields of post model
-- [x] post renders from md to html
-
-
-
-**notes to self**:
-
-* when updating css, run ```python3 manage.py collectstatic```
